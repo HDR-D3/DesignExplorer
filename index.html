@@ -35,7 +35,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Design Explorer 2</title>
+    <title>HDR REPS Parametrics</title>
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -168,7 +168,7 @@
         
         // no img link
         if(file === 0 || file === undefined){
-            return "https://hdrinc.sharepoint.com/sites/BrandCenter/PublishingImages/Logo/Gray_RBG/HDR_Logo_GrayRGB.png";
+            return "img/HDR_Logo_GrayRGB.png";
         }
  
 
@@ -276,7 +276,7 @@
                 </button>
 
                 <div class="navbar-header" title="Design Explorer">
-                    <a href="http://omati-regdes01/REPSParametrics/"> <img width="50px" style="max-width:350px; padding-top: 10px;" src="./img/HDR_Logo_K.png"></a>
+                    <a href="http://omati-regdes01/REPSParametrics/"> <img width="50px" style="max-width:350px; padding-top: 10px; margin-right: 10px" src="./img/HDR_Logo_K.png"><img width="50px" style="max-width:350px; padding-top: 10px;" src="./img/HDR_REPS.png"></a>
                 </div>
             </div>
 
@@ -477,6 +477,7 @@
                 </div>
             </div>
             <!-- /#Welcome content -->
+            <!--
             <div class="row-fluid col-lg-12 row-centered vertical-center fullscreen popupWindow" id="welcome">
                 <div class="col-sm-12 col-centered" id="welcomeContainer">
                     <button class="btn btn-default btn-sm pull-right popupWindowClose">
@@ -520,6 +521,7 @@
                         </h5>
                     </div>
                 </div>
+                -->
 
                 <!--load data div-->
                 <div class="col-sm-12 col-centered" id="loadDataContainer" style=" display:none;width: 700px;height: 500px">
@@ -2854,7 +2856,7 @@
 
         function setStudyInfo(studyInfoData){
             var studyInfo = d3.select("#navbar-studyInfo");
-            studyInfo.select("h4").text(studyInfoData.name);
+            studyInfo.select("h4").text("Rapid Energy Performance Simulator (REPS) Parametrics | " + studyInfoData.name);
             studyInfo.select("h6").text(studyInfoData.date);
 
             //update the global _userSetting
