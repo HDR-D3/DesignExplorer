@@ -223,10 +223,10 @@ a#copyRightButton {
     opacity: 1;
     z-index: 1000;
     width: 50%;
-    height: 80%;
+    height: 85%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 700px; 
+    max-height: 800px; 
     min-height: 530px;
     min-width: 560px;
     padding: 2em;
@@ -351,3 +351,13 @@ g.cell text {
 }
 
 .col-0 { width: 180px; }
+
+.img-responsive {
+    width: 50px; /* This value will depend on what size you want for your loading image, let's say it's 50px */
+    /*height: 40px;*/
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-25px; /* This needs to be half of the height */
+    margin-left:-25px; /* This needs to be half of the width */
+}
