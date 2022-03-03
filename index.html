@@ -343,7 +343,7 @@
                                     <button id="remove" class="btn btn-default btn-xs">Exclude Selection</button>
                                     <button id="keep" class="btn btn-default btn-xs">Zoom to Selection</button>
                                     <button id="savecsv" class="btn btn-default btn-xs" onclick="saveToCSV()">Save Selection to File</button>
-                                    <button id="stilllink" class="btn btn-default btn-xs" onclick="showStillLink()">My Static Link</button>
+                                    <button id="stilllink" class="btn btn-default btn-xs" onclick="showStillLink()">Create Share Link</button>
                                     <a class="btn btn-default btn-xs" href="http://www.mpendesign.com/category/tutorial/" target="_blank">Tutorial</a>
                                     <a class="btn btn-default btn-xs" href="https://hdrinc.com" target="_blank">Services</a>
                                     <a href="https://github.com/tt-acm/DesignExplorer/wiki" class="btn btn-default btn-xs" target="_blank">
@@ -545,7 +545,7 @@
                         <button id="loadData" onclick="MP_getGoogleIDandLoad()" class="file-upload" style="border-radius:0 20px 20px 0;">Load Data</button>
                     </p>
                     <h5 class="text-center" style="color: #9d9d9d;">Please put data.csv, images, and 3D-json files into the same folder.(<a href="design_explorer_data/example/online/example.zip"
-                            target="_blank">example.zip</a>)</h5>
+                            target="_blank">example.zip</a>Do not include any URL text such as ‘?usp=sharing’ in the pasted GoogleDrive link</h5>
                     
                     <div id="loadFileLocally">
                         <h4 class="text-center" style="margin: 60px 0 60px 0;">
@@ -579,15 +579,7 @@
                             <button id="copy-link" class="btn btn-xs btn-default" onclick="CopyToClipboard('#myStudyID')" data-toggle="tooltip" data-placement="bottom" title="Click to copy the link!">
                                 <span class="glyphicon glyphicon-share"></span>
                             </button>
-                        </p> 
-                        <h5 >Short link </h5>
-                        <p >
-                            <code id="showShortUrl">Not available</code>
-                            <button id="copy-showShortUrl" class="btn btn-xs btn-default " onclick="CopyToClipboard('#showShortUrl')" data-toggle="tooltip" data-placement="bottom" title="Click to copy the link!">
-                                <span class="glyphicon glyphicon-share"></span>
-                            </button>
-                        </p> 
-                        
+                        </p>
                     </div>
                     
                     <div class="modal-footer">
