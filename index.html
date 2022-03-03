@@ -222,8 +222,9 @@
 
         }else if (_folderInfo.DE_PW.length>0){
             // if _folderInfo.DE_PW existed, just return.
-            studyEncodedUrl = document.location.origin + "/REPSParametrics/?ID=" + _folderInfo.DE_PW; 
-            d3.select("#showShortUrl").html("https://goo.gl/" +_folderInfo.DE_PW);
+            //console.log(_folderInfo.DE_PW);
+            studyEncodedUrl = document.location.origin + "/REPSParametrics/?ID=" + studyCaseLink;//_folderInfo.DE_PW; 
+            //d3.select("#showShortUrl").html("https://goo.gl/" +_folderInfo.DE_PW);
             d3.select("#myStudyID").html(studyEncodedUrl); 
             $("#showStillLink").modal();
             return;
